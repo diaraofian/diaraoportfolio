@@ -1,0 +1,72 @@
+/* Imported styles */
+@import "animate.css";
+/* @import "~loaders.css/src/animatins/pacman.scss"; */
+
+/* Font faces */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("./assets/fonts/helvetica-neu.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "La Belle Aurore";
+  src: url("./assets/fonts/LaBelleAurore.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("./assets/fonts/CoolveticaRg-Regular.woff2") format("woff2");
+}
+
+/* Other styles */
+input,
+textarea {
+  font-family: "Helvetica Neue";
+}
+
+.menu_wtools {
+  width: 100%;
+  background-color: #ffd700;
+}
+
+.menu_wtools ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.menu_wtools ul li {
+  display: inline;
+}
+
+.menu_wtools ul li a {
+  float: left;
+  text-decoration: none;
+  color: white;
+  padding: 10.5px 11px;
+  background-color: #ffd700;
+}
+
+.menu_wtools ul li a:visited {
+  color: white;
+}
+
+.menu_wtools ul li a:hover,
+.menu_wtools ul li .current {
+  color: white;
+  background-color: #5fd367;
+}
+
+/* .loaderactive {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+} */
