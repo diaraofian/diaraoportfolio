@@ -37,11 +37,13 @@
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
 }
+.skill-page,
 .about-page,
 .contact-page {
   position: relative;
 }
 
+.skill-page .text-zone,
 .about-page .text-zone,
 .contact-page .text-zone {
   position: absolute;
@@ -54,6 +56,7 @@
   max-height: 90%;
 }
 
+.skill-page .text-zone h1,
 .about-page .text-zone h1,
 .contact-page .text-zone h1 {
   font-size: 53px;
@@ -66,6 +69,7 @@
   left: 10px;
 }
 
+.skill-page .text-zone h1::before,
 .about-page .text-zone h1::before,
 .contact-page .text-zone h1::before {
   content: "<h1>";
@@ -78,6 +82,7 @@
   line-height: 18px;
 }
 
+.skill-page .text-zone h1::after,
 .about-page .text-zone h1::after,
 .contact-page .text-zone h1::after {
   content: "<h1/>";
@@ -90,7 +95,7 @@
   margin-left: 20px;
   opacity: 0.6;
 }
-
+.skill-page .text-zone p,
 .about-page .text-zone p,
 .contact-page .text-zone p {
   font-size: 13px;
@@ -101,16 +106,17 @@
   animation: pulse 1s;
 }
 
+.skill-page .text-zone p:nth-of-type(1),
 .about-page .text-zone p:nth-of-type(1),
 .contact-page .text-zone p:nth-of-type(1) {
   animation-delay: 1.1s;
 }
-
+.skill-page .text-zone p:nth-of-type(2),
 .about-page .text-zone p:nth-of-type(2),
 .contact-page .text-zone p:nth-of-type(2) {
   animation-delay: 1.2s;
 }
-
+.skill-page .text-zone p:nth-of-type(3),
 .about-page .text-zone p:nth-of-type(3),
 .contact-page .text-zone p:nth-of-type(3) {
   animation-delay: 1.3s;

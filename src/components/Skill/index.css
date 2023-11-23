@@ -1,0 +1,140 @@
+.cont {
+  width: 80%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding-right: auto;
+  padding-left: auto;
+}
+@media (min-width: 768px) {
+  .cont {
+    margin: auto;
+  }
+}
+@media (min-width: 992px) {
+  .cont {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .cont {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .cont {
+    max-width: 1350px;
+  }
+}
+.section-title p {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5;
+  color: #ffd700;
+}
+.section-title h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #fd6e0a;
+}
+.section-title.center {
+  text-align: center;
+}
+.skill-section {
+  float: right;
+  width: 50%;
+  height: 70%;
+  margin-top: 60px;
+  padding-right: 10px;
+  margin-right: 15px;
+  background: rgba(8, 253, 216, 0.1);
+}
+
+.skill-section .skill-items {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.skill-item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 38%;
+  flex: 0 0 38%;
+  max-width: 38%;
+}
+.skill-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.skill-info p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffd700;
+  opacity: 1;
+  -webkit-animation: showText 0.5s 1s linear forwards;
+  animation-name: showText;
+  animation: showText 0.5s 1s linear forwards;
+}
+.progress-line {
+  margin-top: 7px;
+  height: 10px;
+  width: 100%;
+  background-color: #cdcdcd;
+  border-radius: 50px;
+  position: relative;
+}
+.progress-line span {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  height: 100%;
+  border-radius: 50px;
+  position: absolute;
+  background-color: #fd6e0a;
+  transition: 1s all;
+  animation-name: animate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+.progress-line span.animate {
+  -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@-webkit-keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes animate {
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+@keyframes animate {
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}

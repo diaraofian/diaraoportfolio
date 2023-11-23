@@ -75,3 +75,64 @@
   background: #ffd700;
   color: #333;
 }
+
+.d {
+  float: right;
+  position: relative;
+  max-width: 25vw;
+  height: auto;
+  border: 2px;
+  border-radius: 3px;
+  margin-right: 50px;
+  margin-top: 50px;
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(1);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(1);
+  }
+}
+.item {
+  float: right;
+  margin-right: 200px;
+  margin-top: 50px;
+}
+.di {
+  font-size: 20px;
+  text-align: center;
+  color: #ffd700;
+  font-family: "Times New Roman", Times, serif;
+}
+
+@keyframes change-text {
+  0% {
+    content: attr(data-text); /* Use the attr() function here */
+  }
+  25% {
+    content: "Clever🌟";
+  }
+  50% {
+    content: "developer🖤";
+  }
+  75% {
+    content: "athlete🤾";
+  }
+  100% {
+    content: "Never Give Up person 💪";
+  }
+}
+
+.di::before {
+  content: attr(data-text); /* Use the attr() function here */
+  animation-name: change-text;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}

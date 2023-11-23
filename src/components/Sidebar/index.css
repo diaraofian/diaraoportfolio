@@ -73,15 +73,21 @@
 }
 
 .nav-bar nav a:first-child:after {
-  content: “HOME”;
+  content: "HOME";
 }
 
 .nav-bar nav a.about-link:after {
-  content: “ABOUT”;
+  content: "ABOUT";
 }
 
 .nav-bar nav a.contact-link:after {
-  content: “CONTACT”;
+  content: "CONTACT";
+}
+.nav-bar nav a.skill-link:after {
+  content: "SKILLS";
+}
+.nav-bar nav a.project-link:after {
+  content: "PROJECTS";
 }
 
 .nav-bar nav a.active svg {

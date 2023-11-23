@@ -1,16 +1,22 @@
 import { Link, NavLink } from "react-router-dom";
 import "./index.css";
+// import "bootstrap/dist/css/bootstrap.css";
 
 import Diam from "../../assets/Images/diam.jpg";
 import dlogo from "../../assets/Images/dia D.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faHome,
+  faS,
+  faStar,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   faLinkedin,
   faGithub,
-  faSkype,
-  faYoutube,
+  faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Sidebar = () => {
@@ -30,7 +36,24 @@ const Sidebar = () => {
           className="about-link"
           to="/about"
         >
+          {" "}
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="skill-link"
+          to="/skill"
+        >
+          <FontAwesomeIcon icon={faS} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="project-link"
+          to="/project"
+        >
+          <FontAwesomeIcon icon={faStar} color="#4d4d4e" />
         </NavLink>
         <NavLink
           exact="true"
@@ -43,7 +66,11 @@ const Sidebar = () => {
       </nav>
       <ul>
         <li>
-          <a target="_blank" rel="noreferrer" href="#">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/feed/"
+          >
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
           </a>
         </li>
@@ -56,14 +83,10 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
           </a>
         </li>
+
         <li>
-          <a target="_blank" rel="noreferrer" href="#">
-            <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
-          </a>
-        </li>
-        <li>
-          <a target="_blank" rel="noreferrer" href="#">
-            <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
+          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/">
+            <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
           </a>
         </li>
       </ul>
