@@ -11,7 +11,7 @@
   color: #fff;
   font-size: 53px;
   margin: 0;
-  font-family: “Coolvetica”;
+  font-family: "Coolvetica";
   font-weight: 400;
 }
 
@@ -28,7 +28,7 @@
 
 .home-page h1::after {
   content: " <h1/> ";
-  font-family: " La Belle Aurore ";
+  font-family: "La Belle Aurore";
   color: #ffd700;
   font-size: 18px;
   position: absolute;
@@ -136,3 +136,105 @@
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
+@media (max-width: 600px) {
+  /* Your CSS rules for small screens go here */
+  .home-page .text-zone {
+    position: static;
+    width: 100%;
+    max-height: none;
+    text-align: center;
+  }
+
+  .home-page h1 {
+    font-size: 8vw;
+  }
+
+  .home-page h2 {
+    font-size: 4vw;
+  }
+
+  .home-page .flat-button {
+    font-size: 6vw;
+  }
+
+  .d {
+    float: none;
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+
+  .item {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+/* @media (max-width: 601px) { */
+/* Your CSS rules for small screens go here */
+/* .home-page .text-zone {
+    position: static;
+    width: 100%;
+    max-height: none;
+    text-align: center;
+  }
+
+  .home-page h1 {
+    font-size: 8vw;
+  }
+
+  .home-page h2 {
+    font-size: 4vw;
+  }
+
+  .home-page .flat-button {
+    font-size: 6vw;
+  }
+
+  .d {
+    float: none;
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+
+  .item {
+    float: none;
+    margin: 0 auto;
+  }
+} */
+
+/* @media (max-width: 800px) { */
+/* Your CSS rules for medium screens go here */
+/* .home-page {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page .text-zone {
+    grid-column: 1 / 2;
+  }
+
+  .d {
+    grid-column: 1 / 2;
+  }
+
+  .item {
+    grid-column: 1 / 2;
+  }
+}
+@media (min-width: 1200px) {
+  /* Your CSS rules for large screens go here */
+/* .home-page {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .home-page .text-zone {
+    grid-column: 1 / 2;
+  }
+
+  .d {
+    grid-column: 2 / 3;
+  }
+
+  .item {
+    grid-column: 2 / 3;
+  }
+}   */

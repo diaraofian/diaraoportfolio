@@ -7,6 +7,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Skill from "./components/Skill";
 import Project from "./components/Project";
+
 function App() {
   return (
     <>

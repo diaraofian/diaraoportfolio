@@ -76,3 +76,23 @@
     transform: rotateY(90deg);
   }
 }
+@media screen and (max-width: 600px) {
+  .text-zone {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .text-zone {
+    width: 60%;
+    left: 20%;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .text-zone {
+    width: 40%;
+    left: 30%;
+  }
+}

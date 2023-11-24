@@ -1,0 +1,94 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #eee;
+}
+.title {
+  color: #dff200;
+  position: relative;
+  text-align: center;
+  font-size: 5rem;
+  margin: 2rem auto;
+}
+.carousel {
+  position: relative;
+  width: 800px;
+  margin-left: 300px;
+  margin-bottom: 20px;
+}
+.carousel-img {
+  max-width: 800px;
+  height: fit-content;
+}
+/*fade in img */
+@media screen and (max-width: 1200px) {
+  .carousel {
+    width: 100%;
+  }
+  .carousel-img {
+    width: 100%;
+  }
+}
+.fade {
+  animation: fadeIn 3.5s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: large;
+  border: none;
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+  height: 100%;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+.prev-button {
+  left: 0;
+}
+.next-button {
+  right: 0;
+}
+.carousel-details {
+  position: absolute;
+  bottom: -6.2rem;
+  left: 0;
+  width: 100%;
+  height: 6.2rem;
+  font-size: large;
+  .carousel-title {
+    font-size: 2rem;
+    font-family: "La Belle Aurore";
+    margin-bottom: 2rem;
+    color: #dff200;
+  }
+  .carousel-text {
+    font-size: small;
+    color: #fff;
+    margin-bottom: 2rem;
+    font-family: sans-serif;
+  }
+  .start-button {
+    margin-left: 55rem;
+    margin-bottom: 30rem;
+    font-size: medium;
+    color: #dff200;
+    &:hover {
+      color: gray;
+    }
+  }
+}
