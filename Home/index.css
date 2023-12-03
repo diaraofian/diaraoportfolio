@@ -136,48 +136,48 @@
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-  /* Your CSS rules for small screens go here */
+@media screen and (max-width: 1200px) {
+  .tags,
+  .home-page h1:before,
+  .home-page h1:after {
+    display: none;
+  }
+
   .home-page .text-zone {
-    position: static;
+    position: initial;
     width: 100%;
-    max-height: none;
-    text-align: center;
-  }
-
-  .home-page h1 {
-    font-size: 8vw;
-  }
-
-  .home-page h2 {
-    font-size: 4vw;
+    transform: none;
+    padding: 10px;
+    box-sizing: border-box;
   }
 
   .home-page .flat-button {
-    font-size: 6vw;
+    float: none;
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 232px;
   }
-
+  .item {
+    position: relative;
+    width: 300px;
+    height: auto;
+    top: 50px;
+    right: 900px;
+    box-sizing: border-box;
+    margin: auto;
+    left: 0;
+  }
   .d {
-    float: none;
-    max-width: 80vw;
-    margin: 0 auto;
+    bottom: 40px;
+    right: 18px;
   }
 
-  .item {
-    float: none;
-    margin: 0 auto;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .item {
-    float: right;
-    margin-right: 200px;
-    margin-top: 50px;
-  }
-  .di {
-    font-size: 20px;
-    text-align: center;
-    color: #ffd700;
-    font-family: “Times New Roman”, Times, serif;
+  .item svg {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    margin: auto;
   }
 }
