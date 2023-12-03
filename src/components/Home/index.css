@@ -155,17 +155,21 @@
     float: none;
     display: block;
     margin: 20px auto 0 auto;
-    width: 124px;
+    width: 232px;
   }
   .item {
     position: relative;
-    width: 100px;
+    width: 300px;
     height: auto;
     top: 50px;
-    right: 0;
+    right: 900px;
     box-sizing: border-box;
     margin: auto;
-    left: 0px;
+    left: 0;
+  }
+  .d {
+    bottom: 40px;
+    right: 18px;
   }
 
   .item svg {
