@@ -22,19 +22,21 @@ const Skill = () => {
             idx={15}
           />
         </h1>
-        <p>Here you can see all of Dia skills.</p>
-        <p>
-          Dia is proficient in HTML, CSS, and JS. She can create responsive and
-          interactive web pages using these technologies. she also has
-          experience with React, a popular front-end framework for building user
-          interfaces.
-        </p>
+        <div>
+          <p>Here you can see some of Dia skills.</p>
+          <p>
+            Dia is proficient in HTML, CSS, and JS. She can create responsive
+            and interactive web pages using these technologies. she also has
+            experience with React, a popular front-end framework for building
+            user interfaces.
+          </p>
 
-        <p>
-          This is an example of Dia's portfolio, where he showcases his projects
-          and skills. You can see how he uses different colors, fonts, and
-          animations to create a stunning website.
-        </p>
+          <p>
+            This is an example of Dia's portfolio, where he showcases his
+            projects and skills. You can see how he uses different colors,
+            fonts, and animations to create a stunning website.
+          </p>
+        </div>
       </div>
       <section className="skill-section">
         <div className="cont">

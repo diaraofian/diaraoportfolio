@@ -6,7 +6,7 @@
 
 .top-tags {
   bottom: auto;
-  top: 30px;
+  top: 35px;
 }
 
 .tags {
@@ -16,7 +16,7 @@
   bottom: 0;
   left: 120px;
   font-size: 18px;
-  font-family: "La Belle Aurore";
+  font-family: "La Belle Aurore", cursive;
 }
 
 .bottom-tag-html {
@@ -37,6 +37,7 @@
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
 }
+
 .skill-page,
 .about-page,
 .contact-page {
@@ -73,7 +74,8 @@
 .about-page .text-zone h1::before,
 .contact-page .text-zone h1::before {
   content: "<h1>";
-  font-family: "La Belle Aurore";
+  font-family: "La Belle Aurore", cursive;
+  color: #ffd700;
   font-size: 18px;
   position: absolute;
   margin-top: -10px;
@@ -86,7 +88,8 @@
 .about-page .text-zone h1::after,
 .contact-page .text-zone h1::after {
   content: "<h1/>";
-  font-family: "La Belle Aurore";
+  font-family: "La Belle Aurore", cursive;
+  color: #ffd700;
   font-size: 18px;
   line-height: 18px;
   position: absolute;
@@ -95,6 +98,7 @@
   margin-left: 20px;
   opacity: 0.6;
 }
+
 .skill-page .text-zone p,
 .about-page .text-zone p,
 .contact-page .text-zone p {
@@ -116,6 +120,7 @@
 .contact-page .text-zone p:nth-of-type(2) {
   animation-delay: 1.2s;
 }
+
 .skill-page .text-zone p:nth-of-type(3),
 .about-page .text-zone p:nth-of-type(3),
 .contact-page .text-zone p:nth-of-type(3) {
@@ -124,4 +129,35 @@
 
 .text-animate-hover:hover {
   color: #fff;
+}
+@media screen and (max-width: 1200px) {
+  .page {
+    position: initial;
+  }
+
+  .container {
+    position: initial;
+    height: auto;
+    min-height: auto;
+  }
+
+  .container.contact-page,
+  .container.about-page,
+  .container.project-page {
+    .text-zone {
+      position: initial;
+      transform: none;
+      width: 100%;
+      display: block;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  }
+
+  .stage-cube-cont {
+    position: initial;
+    width: 100%;
+    height: 0%;
+    overflow: visible;
+  }
 }

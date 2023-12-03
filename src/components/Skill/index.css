@@ -6,26 +6,7 @@
   padding-right: auto;
   padding-left: auto;
 }
-@media (min-width: 768px) {
-  .cont {
-    margin: auto;
-  }
-}
-@media (min-width: 992px) {
-  .cont {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .cont {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 1400px) {
-  .cont {
-    max-width: 1350px;
-  }
-}
+
 .section-title p {
   font-weight: 500;
   font-size: 22px;
@@ -109,7 +90,7 @@
   transition: 1s all;
   animation-name: animate;
   animation-duration: 4s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: forwards;
   animation-fill-mode: forwards;
 }
 .progress-line span.animate {
@@ -136,5 +117,14 @@
   100% {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .skill-section {
+    margin-top: 700px;
+    align-items: center;
+    float: inline-end;
+    width: 100%;
+    margin-right: 10px;
   }
 }
