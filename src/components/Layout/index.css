@@ -140,10 +140,10 @@
     height: auto;
     min-height: auto;
   }
-
+  .container.project-page,
+  .container.skill-page,
   .container.contact-page,
-  .container.about-page,
-  .container.project-page {
+  .container.about-page {
     .text-zone {
       position: initial;
       transform: none;

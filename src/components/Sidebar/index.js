@@ -6,11 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
   faClose,
+  faE,
   faEnvelope,
   faHome,
   faS,
   faStar,
-  faSuitcase,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -66,6 +66,16 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faStar} color="#4d4d4e" />
         </NavLink>
+        <NavLink
+          exact="true"
+          activeclassname="active"
+          className="education-link"
+          to="/education"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faE} color="#4d4d4e" />
+        </NavLink>
+
         <NavLink
           exact="true"
           activeclassname="active"

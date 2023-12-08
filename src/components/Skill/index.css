@@ -119,12 +119,17 @@
     transform: scaleX(1);
   }
 }
+
 @media screen and (max-width: 1200px) {
-  .skill-section {
-    margin-top: 700px;
-    align-items: center;
-    float: inline-end;
+  .text-zone {
+    position: initial;
+    overflow: visible;
     width: 100%;
-    margin-right: 10px;
+  }
+  .skill-section {
+    float: none;
+    width: 100%;
+    margin-bottom: 100px;
+    padding: 10px;
   }
 }
