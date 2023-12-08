@@ -6,26 +6,7 @@
   padding-right: auto;
   padding-left: auto;
 }
-@media (min-width: 768px) {
-  .cont {
-    margin: auto;
-  }
-}
-@media (min-width: 992px) {
-  .cont {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .cont {
-    max-width: 1140px;
-  }
-}
-@media (min-width: 1400px) {
-  .cont {
-    max-width: 1350px;
-  }
-}
+
 .section-title p {
   font-weight: 500;
   font-size: 22px;
@@ -136,5 +117,19 @@
   100% {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .text-zone {
+    position: initial;
+    overflow: visible;
+    width: 100%;
+  }
+  .skill-section {
+    float: none;
+    width: 100%;
+    margin-bottom: 100px;
+    padding: 10px;
   }
 }
